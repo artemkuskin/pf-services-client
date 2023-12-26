@@ -1,0 +1,22 @@
+.custom_input_container {
+    display: flex;
+    align-items: center;
+}
+
+.custom_input {
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 25px;
+    border-style: solid;
+    background: rgb(58, 142, 180);
+    background: #203768;
+}
+
+.search_logo {
+    width: 24px;
+    height: 24px;
+    margin-right: -25px;
+    z-index: 20;
+
+}

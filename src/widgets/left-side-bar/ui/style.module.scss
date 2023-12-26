@@ -1,0 +1,31 @@
+.side_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 90vh;
+    background-color: #1f345f;
+}
+
+.side_bar_image {
+    width: 20px;
+    height: 20px;
+    color: black;
+
+}
+
+.side_bar_link {
+    height: 46px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #37435b;
+    box-shadow: -3px 2px 7px 1px;
+}
+
+.side_bar_name {
+    color: white;
+    width: 60%;
+}
