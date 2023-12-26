@@ -1,0 +1,1 @@
+import { WishCard } from "./ui"; 

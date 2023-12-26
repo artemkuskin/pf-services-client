@@ -31,4 +31,21 @@ p {
 
 .container {
   height: 100vh;
+
+}
+
+.contant {
+  position: absolute;
+  top: 11%;
+  left: 200px;
+}
+
+.active {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #2a364e;
+  box-shadow: 3px 6px 7px 1px;
 }
