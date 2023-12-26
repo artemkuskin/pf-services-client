@@ -1,0 +1,30 @@
+.footer {
+    display: none;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    background: #13203d;
+
+    @media screen and (max-width: 450px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.footer_image {
+    width: 30px;
+    height: 30px;
+}
+
+.footer_link {
+    width: 17%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-inline-start: 1px solid white;
+
+}
