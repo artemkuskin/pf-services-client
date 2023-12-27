@@ -1,5 +1,5 @@
 import styles from './style.module.scss'
-import searchLogo from '../../../../assets/images/search.svg'
+import searchLogo from '../../../assets/images/search.svg'
 import { Image } from '../../image'
 export const CustomInput = () => {
     return (

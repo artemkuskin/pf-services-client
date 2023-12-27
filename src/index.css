@@ -6,6 +6,7 @@ body {
   line-height: 180%;
   background-color: rgb(255, 255, 255);
   @include text-regular;
+  overflow: hidden;
 }
 
 a {
@@ -31,17 +32,6 @@ p {
 
 .container {
   height: 100vh;
-
-}
-
-.contant {
-  position: absolute;
-  top: 75px;
-  left: 200px;
-
-  @media screen and (max-width: 450px) {
-    position: static;
-  }
 }
 
 .active {

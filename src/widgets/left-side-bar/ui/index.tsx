@@ -1,6 +1,6 @@
-import { sideMenu } from '../../../shared/utils/'
+import { sideMenu } from '../../../utils'
 import styles from './style.module.scss'
-import { Image } from '../../../shared/ui/image'
+import { Image } from '../../../components/image'
 import { Link, NavLink } from 'react-router-dom'
 export const LeftSideBar = () => {
 

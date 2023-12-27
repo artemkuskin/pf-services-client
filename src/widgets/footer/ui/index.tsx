@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
-import { sideMenu } from '../../../shared/utils'
+import { sideMenu } from '../../../utils'
 import styles from './style.module.scss'
-import { Image } from '../../../shared/ui/image'
+import { Image } from '../../../components/image'
 export const Footer = () => {
     return (
         <footer className={styles.footer}>

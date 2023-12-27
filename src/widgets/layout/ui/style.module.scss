@@ -1,0 +1,14 @@
+.contant {
+    position: absolute;
+    top: 75px;
+    left: 200px;
+    width: 90%;
+    height: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 450px) {
+        position: static;
+    }
+}

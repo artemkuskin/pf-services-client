@@ -1,9 +1,9 @@
-import device from '../../assets/images/device.svg'
-import calendar from '../../assets/images/calendar.svg'
-import user from '../../assets/images/user.svg'
-import events from '../../assets/images/events.svg'
-import card from '../../assets/images/card.svg'
-import skill from '../../assets/images/skill.svg'
+import device from '../assets/images/device.svg'
+import calendar from '../assets/images/calendar.svg'
+import user from '../assets/images/user.svg'
+import events from '../assets/images/events.svg'
+import card from '../assets/images/card.svg'
+import skill from '../assets/images/skill.svg'
 export const sideMenu = [
     {
         name: 'Profiles',
@@ -36,3 +36,9 @@ export const sideMenu = [
         image: device
     }
 ]
+export const colors = ['#ffd700', '#ff9900', '#a9ff00', '#00ff95', '#00c4ff', '#b400ff', '#ff00d4', '#e55d5d']
+
+export const getcolors = () => {
+    const char = Math.floor(Math.random() * (colors.length - 1))
+    return colors[char]
+}

@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
-import { Header } from "../../../widgets/header"
-import { LeftSideBar } from "../../../widgets/left-side-bar"
-import { Footer } from "../../../widgets/footer";
-
+import { Header } from "../../header"
+import { LeftSideBar } from "../../left-side-bar"
+import { Footer } from "../../footer";
+import styles from './style.module.scss'
 interface MyComponentProps {
     children: ReactNode;
 }
@@ -14,7 +14,7 @@ export const Layout = ({ children }: MyComponentProps) => {
             <Header />
 
             <LeftSideBar />
-            <div className="contant">
+            <div className={styles.contant}>
 
                 {children}
             </div>

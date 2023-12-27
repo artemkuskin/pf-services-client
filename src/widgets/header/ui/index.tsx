@@ -1,7 +1,7 @@
-import { CustomInput } from '../../../shared/ui/input'
+import { CustomInput } from '../../../components/input'
 import styles from './style.module.scss'
 import userLogo from '../../../assets/images/user.svg'
-import { Image } from '../../../shared/ui/image'
+import { Image } from '../../../components/image'
 import { Link } from 'react-router-dom'
 
 export const Header = () => {
