@@ -1,0 +1,43 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 9px 9px 5px 3px rgba(0, 0, 0, 0.1);
+    background-color: #d18d34;
+}
+
+
+.card_discription {
+    text-align: start;
+    width: fit-content;
+    font-size: 15px;
+    line-height: 20px;
+    height: 70%;
+}
+
+.card_creator {
+    font-size: 10px;
+    text-align: end;
+    font-weight: 800;
+}
+
+.title_contant {
+    display: flex;
+    justify-content: space-around;
+    width: 140%;
+    margin-top: -10px;
+}
+
+.pin {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}

@@ -1,1 +1,1 @@
-import { WorkingSkills } from "./ui"; 
+export { WorkingSkills } from "./ui"; 

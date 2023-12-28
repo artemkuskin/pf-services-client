@@ -1,1 +1,1 @@
-import { WishCard } from "./ui"; 
+export { WishCard } from "./ui"; 

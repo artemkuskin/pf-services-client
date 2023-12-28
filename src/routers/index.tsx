@@ -1,12 +1,12 @@
 import App from "../app";
-import { Events } from "../pages/events/ui";
-import { MyProile } from "../pages/my-profile/ui";
-import { Profiles } from "../pages/profiles/ui";
-import { RemoteOffice } from "../pages/remote-office/ui";
-import { WishCard } from "../pages/wish-card/ui";
-import { WorkingDevices } from "../pages/working-devices/ui";
-import { WorkingSkills } from "../pages/working-skills/ui";
-import { Layout } from "../widgets/layout/ui";
+import { Events } from "../pages/events";
+import { MyProile } from "../pages/my-profile";
+import { Profiles } from "../pages/profiles";
+import { RemoteOffice } from "../pages/remote-office";
+import { WishCard } from "../pages/wish-card";
+import { WorkingDevices } from "../pages/working-devices";
+import { WorkingSkills } from "../pages/working-skills";
+import { Layout } from "../widgets/layout";
 
 export const routes = [
     {

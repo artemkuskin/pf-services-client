@@ -1,1 +1,1 @@
-import { MyProile } from "./ui"; 
+export { MyProile } from "./ui"; 

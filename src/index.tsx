@@ -1,15 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './app';
-import { Layout } from './widgets/layout/ui';
-import { Profiles } from './pages/profiles/ui';
-import { RemoteOffice } from './pages/remote-office/ui';
-import { WishCard } from './pages/wish-card/ui';
-import { WorkingSkills } from './pages/working-skills/ui';
-import { Events } from './pages/events/ui';
-import { WorkingDevices } from './pages/working-devices/ui';
-import { MyProile } from './pages/my-profile/ui';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { routes } from './routers';
 

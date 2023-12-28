@@ -1,1 +1,1 @@
-import { Profiles } from "./ui"; 
+export { Profiles } from "./ui"; 
