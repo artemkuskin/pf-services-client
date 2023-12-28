@@ -1,4 +1,4 @@
-import { CustomInput } from '../../../components/input'
+import { CustomInput } from '../../../components/custom-input'
 import styles from './style.module.scss'
 import userLogo from '../../../assets/images/user.svg'
 import { Image } from '../../../components/image'

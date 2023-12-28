@@ -1,1 +1,1 @@
-export { CustomInput } from './ui'
+export { Input } from './ui'

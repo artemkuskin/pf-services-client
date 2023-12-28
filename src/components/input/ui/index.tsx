@@ -1,11 +1,20 @@
 import styles from './style.module.scss'
-import searchLogo from '../../../assets/images/search.svg'
-import { Image } from '../../image'
-export const CustomInput = () => {
+
+interface IInput {
+    style: string
+    value: string
+    onChange: (value: string) => void;
+}
+
+export const Input = ({ style, value, onChange }: IInput) => {
     return (
-        <section className={styles.custom_input_container}>
-            <Image src={searchLogo} alt='search' style={styles.search_logo} />
-            <input className={styles.custom_input} />
-        </section>
+
+        <input
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+            type={"text"}
+            className={style}
+        />
+
     )
 }
