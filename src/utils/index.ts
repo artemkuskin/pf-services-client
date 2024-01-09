@@ -42,3 +42,15 @@ export const getcolors = () => {
     const char = Math.floor(Math.random() * (colors.length - 1))
     return colors[char]
 }
+
+export const isEmail = (email: string) => {
+    const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    return pattern.test(email);
+}
+
+export const isPassword = (password: string) => {
+    const pattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]$/;
+
+    return pattern.test(password);
+}

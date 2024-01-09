@@ -1,5 +1,7 @@
 import { Button } from '../../../components/button'
 import { Input } from '../../../components/input'
+import { Textarea } from '../../../components/textarea'
+
 import styles from './style.module.scss'
 export const WishCardModal = ({ changeTitle, changeDescription, createWishCard, handleCloseModal, isOpen, infoWishCard }: any) => {
 
@@ -18,9 +20,9 @@ export const WishCardModal = ({ changeTitle, changeDescription, createWishCard, 
                                 </label>
                                 <label>
                                     Description:
-                                    <textarea className={styles.modal_text_aria}
-                                        value={infoWishCard.description} // Ensure it's a string
-                                        onChange={(e) => changeDescription(e.target.value)} ></textarea>
+                                    <Textarea style={styles.modal_text_aria}
+                                        value={infoWishCard.description}
+                                        onChange={changeDescription} />
                                 </label>
                             </section>
                             <Button text='Create' handleClick={createWishCard} style={styles.modal_button} />

@@ -1,5 +1,6 @@
 import App from "../app";
 import { Events } from "../pages/events";
+import { Login } from "../pages/login";
 import { MyProile } from "../pages/my-profile";
 import { Profiles } from "../pages/profiles";
 import { RemoteOffice } from "../pages/remote-office";
@@ -44,4 +45,8 @@ export const routes = [
         path: '/my-profile',
         element: <Layout><MyProile /></Layout>
     },
+    {
+        path: '/login',
+        element: <Login />
+    }
 ]
