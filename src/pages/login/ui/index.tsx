@@ -3,6 +3,7 @@ import styles from './style.module.scss'
 import { Input } from '../../../components/input'
 import { Button } from '../../../components/button'
 import { isEmail, isPassword } from '../../../utils'
+import { LableInput } from '../../../components/lable-error'
 
 export const Login = () => {
 
@@ -24,21 +25,22 @@ export const Login = () => {
         setErrorEmail('')
         setErrorPassword('')
         if (email.trim() === '') {
-            return setErrorEmail('Email is empty')
-        } else if (!isEmail(email)) {
-            return setErrorEmail('Email is require')
+            setErrorEmail('Email is empty')
+        }
+        if (!isEmail(email)) {
+            setErrorEmail('Email is require')
         }
 
         if (password.trim() === '') {
-            return setErrorPassword('Password is empty')
+            setErrorPassword('Password is empty')
         } else if (password.length < 8 || password.length > 15) {
-            return setErrorPassword('Min password length 8, and the max 15')
+            setErrorPassword('Min password length 8, and the max 15')
         } else if (isPassword(password)) {
-            return setErrorPassword('Password is require')
+            setErrorPassword('Password is require')
         }
 
         // if (!errorEmail && !errorPassword) {
-        console.log('Congratilation');
+        // console.log('Congratilation');
 
 
         // }
@@ -51,12 +53,12 @@ export const Login = () => {
                     <label className={styles.login_label}>
                         Email
                         <Input value={email} style={styles.login_input} onChange={handleChangeEmail} />
-                        {errorEmail && <span className={styles.login_error}>{errorEmail}</span>}
+                        {errorEmail && <LableInput errorText={errorEmail} />}
                     </label>
                     <label className={styles.login_label}>
                         Password
                         <Input value={password} style={styles.login_input} onChange={handleChangePassword} />
-                        {errorPassword && <span className={styles.login_error}>{errorPassword}</span>}
+                        {errorPassword && <LableInput errorText={errorPassword} />}
                     </label>
                 </div>
                 <div className={styles.login_buttons}>

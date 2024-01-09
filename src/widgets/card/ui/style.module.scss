@@ -11,10 +11,19 @@
     border-radius: 8px;
     box-shadow: 9px 9px 5px 3px rgba(0, 0, 0, 0.1);
     background-color: #d18d34;
+
+    @media screen and (max-width: 540px) {
+        width: 200px;
+        height: 250px;
+
+        & p {
+            font-size: 17px;
+        }
+    }
 }
 
 
-.card_discription {
+.card_description {
     text-align: start;
     width: fit-content;
     font-size: 15px;

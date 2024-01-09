@@ -4,26 +4,30 @@ import { wishCard } from '../../../mock'
 import { Card } from '../../../widgets/card'
 import styles from './style.module.scss'
 import { WishCardModal } from '../../../widgets/wish-card-modal'
-import { title } from 'process'
 export const WishCard = () => {
     const [isOpenModal, setIsOpenModal] = useState(false)
-    const [infoWishCard, setInfoWishCard] = useState({ title: '', discription: '', id: 33, creator: 'Pavel' })
+    const [infoWishCard, setInfoWishCard] = useState({ title: '', description: '', id: 33, creator: 'Pavel' })
     const [cards, setCards] = useState(wishCard)
+    const [errorDescription, setErrorDescription] = useState('')
+    const [errorTitle, setErrorTitle] = useState('')
 
     const handleOpenModal = () => {
         setInfoWishCard({
             ...infoWishCard,
             title: '',
-            discription: ''
+            description: ''
         });
         setIsOpenModal(true)
     }
 
     const handleCloseModal = () => {
+        setErrorTitle('')
+        setErrorDescription('')
         setIsOpenModal(false)
     }
 
     const changeTitle = (text: string) => {
+        setErrorTitle('')
         setInfoWishCard({
             ...infoWishCard,
             title: text
@@ -31,18 +35,32 @@ export const WishCard = () => {
     }
 
     const changeDescription = (text: string) => {
+        setErrorDescription('')
         setInfoWishCard({
             ...infoWishCard,
-            discription: text
+            description: text
         });
     }
 
     const createWishCard = () => {
-        setCards(prevCards => [
-            ...prevCards,
-            infoWishCard,
-        ]);
-        setIsOpenModal(false)
+        setErrorTitle('')
+        setErrorDescription('')
+
+        if (infoWishCard.title.trim() === '') {
+            setErrorTitle('Title is empty')
+        }
+
+        if (infoWishCard.description.trim() === '') {
+            setErrorDescription('Description is empty')
+        } else if (infoWishCard.description.length < 10) {
+            setErrorDescription('Min password length 10')
+        }
+
+        // setCards(prevCards => [
+        //     ...prevCards,
+        //     infoWishCard,
+        // ]);
+        // setIsOpenModal(false)
     }
 
     return (
@@ -55,7 +73,7 @@ export const WishCard = () => {
                     ))
                 }
             </div>
-            <WishCardModal changeTitle={changeTitle} changeDescription={changeDescription} createWishCard={createWishCard} handleCloseModal={handleCloseModal} isOpen={isOpenModal} infoWishCard={infoWishCard} />
+            <WishCardModal errorDescription={errorDescription} errorTitle={errorTitle} changeTitle={changeTitle} changeDescription={changeDescription} createWishCard={createWishCard} handleCloseModal={handleCloseModal} isOpen={isOpenModal} infoWishCard={infoWishCard} />
         </>
     )
 }

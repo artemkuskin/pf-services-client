@@ -1,9 +1,10 @@
 import { Button } from '../../../components/button'
 import { Input } from '../../../components/input'
+import { LableInput } from '../../../components/lable-error'
 import { Textarea } from '../../../components/textarea'
 
 import styles from './style.module.scss'
-export const WishCardModal = ({ changeTitle, changeDescription, createWishCard, handleCloseModal, isOpen, infoWishCard }: any) => {
+export const WishCardModal = ({ changeTitle, changeDescription, createWishCard, handleCloseModal, isOpen, infoWishCard, errorDescription, errorTitle }: any) => {
 
     return (
         <>
@@ -17,12 +18,14 @@ export const WishCardModal = ({ changeTitle, changeDescription, createWishCard, 
                                 <label>
                                     Title:
                                     <Input style={styles.modal_input} value={infoWishCard.title} onChange={changeTitle} />
+                                    {errorTitle && <LableInput errorText={errorTitle} />}
                                 </label>
                                 <label>
                                     Description:
                                     <Textarea style={styles.modal_text_aria}
                                         value={infoWishCard.description}
                                         onChange={changeDescription} />
+                                    {errorDescription && <LableInput errorText={errorDescription} />}
                                 </label>
                             </section>
                             <Button text='Create' handleClick={createWishCard} style={styles.modal_button} />

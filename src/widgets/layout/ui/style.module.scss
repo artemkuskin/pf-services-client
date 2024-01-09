@@ -8,7 +8,20 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 450px) {
+
+    @media screen and (max-width: 1500px) {
+        left: 160px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        left: 140px;
+    }
+
+    @media screen and (max-width: 700px) {
+        left: 120px;
+    }
+
+    @media screen and (max-width: 540px) {
         position: static;
         width: 100%;
 
