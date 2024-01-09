@@ -5,8 +5,8 @@
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-between;
-    background-color: rgb(48, 107, 48);
-    border: 20px solid rgb(32, 63, 32);
+    background-color: #1f345f;
+    border: 20px solid #13203d;
     border-radius: 5px;
     overflow-y: auto;
 
@@ -53,10 +53,10 @@
 }
 
 .dashboard::-webkit-scrollbar-track {
-    background-color: rgb(32, 63, 32);
+    background-color: rgb(122, 122, 122);
 }
 
 .dashboard::-webkit-scrollbar-thumb {
-    background: rgb(40, 90, 40);
-    border-radius: 10px;
+    background: rgb(201, 201, 201);
+
 }
