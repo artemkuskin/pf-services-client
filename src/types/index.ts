@@ -7,4 +7,12 @@ export interface IUser {
     sityHome: string
     birthday: string
     image: string | undefined
+    progects: IProgects[]
+}
+
+interface IProgects {
+    name: string
+    start: string
+    end: string
+    stack: string[]
 }

@@ -10,6 +10,7 @@ export const UserInformation = ({ user }: { user: IUser | undefined }) => {
             <span className={styles.inaformation_sity}>г.{user?.sity}</span>
             <span className={styles.inaformation_home_sity}>{user?.sityHome}</span>
             <span className={styles.inaformation_education}>{user?.education}</span>
+
         </div>
     )
 }

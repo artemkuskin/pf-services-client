@@ -1,0 +1,35 @@
+.progect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px groove #ffffff;
+
+    span {
+        margin: 10px;
+    }
+}
+
+.tehnology {
+    display: flex;
+}
+
+.progects {
+    width: 100%;
+    height: 300px;
+    border-bottom: 3px solid #13203d;
+    overflow-y: auto;
+}
+
+
+.progects::-webkit-scrollbar {
+    width: 12px;
+}
+
+.progects::-webkit-scrollbar-track {
+    background-color: rgb(122, 122, 122);
+}
+
+.progects::-webkit-scrollbar-thumb {
+    background: rgb(201, 201, 201);
+
+}
