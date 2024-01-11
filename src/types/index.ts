@@ -8,11 +8,17 @@ export interface IUser {
     birthday: string
     image: string | undefined
     progects: IProgects[]
+    skills: ISkills
 }
 
-interface IProgects {
+export interface IProgects {
     name: string
     start: string
     end: string
     stack: string[]
+}
+
+export interface ISkills {
+    back: string[]
+    front: string[]
 }

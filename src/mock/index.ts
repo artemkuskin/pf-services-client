@@ -158,6 +158,10 @@ export const users = [
         sity: 'Новочеркасск', sityHome: 'Екатеринбурга, Свердловской области',
         birthday: '23.08.2001',
         image: undefined,
+        skills: {
+            back: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Nest.js'],
+            front: ['React', 'Next.js', 'TypeScript', 'Reduccccccccccccccccccccccccccccx', 'React-Native js', 'React', 'Next.js', 'TypeScript', 'Material UI', 'Tailwind.css', 'Redux', 'React-Native js']
+        },
         progects: [
             {
                 name: 'Medical service',
@@ -240,6 +244,10 @@ export const users = [
         sity: 'Новочеркасск', sityHome: 'Екатеринбурга, Свердловской области',
         birthday: '23.08.2001',
         image: undefined,
+        skills: {
+            back: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Nest.js'],
+            front: ['React', 'Next.js', 'TypeScript', 'Material UI', 'Tailwind.css', 'Redux', 'React-Native js']
+        },
         progects: [
             {
                 name: 'Medical service',
@@ -270,6 +278,10 @@ export const users = [
         sityHome: 'Екатеринбурга,Свердловской области',
         birthday: '23.08.2001',
         image: undefined,
+        skills: {
+            back: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Nest.js'],
+            front: ['React', 'Next.js', 'TypeScript', 'Material UI', 'Tailwind.css', 'Redux', 'React-Native js']
+        },
         progects: [
             {
                 name: 'Medical service',
@@ -301,6 +313,10 @@ export const users = [
         sityHome: 'Екатеринбурга,Свердловской области',
         birthday: '23.08.2001',
         image: undefined,
+        skills: {
+            back: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Nest.js'],
+            front: ['React', 'Next.js', 'TypeScript', 'Material UI', 'Tailwind.css', 'Redux', 'React-Native js']
+        },
         progects: [
             {
                 name: 'Medical service',
@@ -332,6 +348,10 @@ export const users = [
         sityHome: 'Екатеринбурга,Свердловской области',
         birthday: '23.08.2001',
         image: undefined,
+        skills: {
+            back: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Nest.js'],
+            front: ['React', 'Next.js', 'TypeScript', 'Material UI', 'Tailwind.css', 'Redux', 'React-Native js', 'React', 'Next.js', 'TypeScript', 'Material UI', 'Tailwind.css', 'Redux', 'React-Native js']
+        },
         progects: [
             {
                 name: 'Medical service',

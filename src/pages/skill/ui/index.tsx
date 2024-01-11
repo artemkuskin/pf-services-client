@@ -7,6 +7,7 @@ import { users } from "../../../mock"
 import { UserInformation } from "../../../widgets/user-information"
 import { IUser } from "../../../types"
 import { ProgectsInformation } from "../../../widgets/progects-information"
+import { UserSkill } from "../../../widgets/user-skill"
 
 export const Skill = () => {
     const { userId } = useParams()
@@ -30,19 +31,15 @@ export const Skill = () => {
             </section>
             <section className={styles.skill_contant}>
                 <section className={styles.progects_title}>
-                    <span>Название</span>
-                    <span>Вход в проект</span>
-                    <span>Выход из проекта</span>
-                    <span>Технологии</span>
+                    <span className={styles.progects_title_name}>Название</span>
+                    <span className={styles.progects_title_name}>Вход в проект</span>
+
+                    <span className={styles.progects_title_name}>Технологии</span>
                 </section>
                 <ProgectsInformation user={user} />
                 <div className={styles.skills}>
-                    <section className={styles.skills_front}>
-
-                    </section>
-                    <section className={styles.skills_back}>
-
-                    </section>
+                    <UserSkill title={'Frontend'} skills={user?.skills.front} style={styles.skills_front} />
+                    <UserSkill title={'Backend'} skills={user?.skills.back} style={styles.skills_back} />
                 </div>
             </section>
         </div>
